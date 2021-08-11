@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_index.css">
+    <title>PokeInfo</title>
+</head>
+<body>
+
+    <nav class="barra-navegacao">
+        <li id="home_btn"> PokéInfo </li>
+        <li id="about_btn"> Sobre </li>
+    </nav>
+
+    <div class="procurar-pokemon">
+        <h2>Pesquise um Pokémon !</h2>
+        <div class="procurar-input">
+            <input type="text" id="pesquisar_pokemon">
+            <button id="btn_pesquisar_pokemon">Pesquisar</button>
+        </div>
+    </div>
+
+    <div class="mostrar-pokemon">
+        <div class="erro-pokemon">
+            <p>Parece que tivemos um erro :(</p>
+        </div>
+
+        <div class="mostrar-pokemon-content">
+            <div class="imgs-poke">
+                <img src="" alt="" id="poke_img_front">
+                <img src="" alt="" id="poke_img_back">
+            </div>
+
+            <h3 class="base-info" id="nome_pokemon"></h3>
+
+            <h3 class="base-info" id="id"></h3>
+
+            <h3 class="base-info">Geral:</h3>
+
+            <div class="geral">
+                <table border="1" class="tabela tabela-geral"></table>
+            </div>
+
+            <h3 class="base-info">Habilidades:</h3>
+
+            <div class="habilidades">
+                <table border="1" class="tabela tabela-habilidades"> </table>
+            </div>
+
+            <h3 class="base-info">Status:</h3>
+
+            <div class="status">
+                <table border="1" class="tabela tabela-status"> </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sobre">
+        <p>
+            Oi, obrigado por acessar o site,
+            pesquise sobre todos os Pokémon existentes
+            pelo seu ID ou nome, para mais informações
+            do projeto, acesse o meu <a href="https://github.com/dam1aoGomes">GITHUB.</a>
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

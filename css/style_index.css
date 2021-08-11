@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{
+    --cor-azul-letra: #3761a8;
+    --cor-amarelo-maroto: #feca1b;
+    --cor-azuzinho-escuro: #263238;  
+}
+@font-face {
+    font-family: 'PokemonFont';
+    src: url('../fonts/Pokemon\ Hollow.ttf');
+    src: url('../fonts/Pokemon\ Solid.ttf');
+}
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-amarelo-maroto);
+}
+.barra-navegacao{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    color: var(--cor-amarelo-maroto);
+    background-color: var(--cor-azuzinho-escuro);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.barra-navegacao li{
+    margin-left: 20px;
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 5px;
+}
+#home_btn{
+    border-bottom: 2px solid var(--cor-azul-letra);
+}
+.procurar-pokemon{
+    width: 600px;
+    height: 250px;
+    background-color: white;
+    margin-top: 100px;
+    border: solid rgb(135, 134, 134) 1px;
+    font-family: 'PokemonFont';
+    box-shadow: 0px 0px 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.procurar-pokemon h2{
+    text-align: center;
+    letter-spacing: 3.5px;
+    color: var(--cor-amarelo-maroto);
+    font-size: 23pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--cor-azul-letra);
+}
+.procurar-pokemon .procurar-input input{
+    border: var(--cor-azul-letra) 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9pt;
+}
+.procurar-pokemon .procurar-input button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--cor-azuzinho-escuro);
+    color: var(--cor-amarelo-maroto);
+}
+.mostrar-pokemon{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: var(--cor-azuzinho-escuro);
+    width: 60px;
+    height: 60px;
+}
+.mostrar-pokemon .erro-pokemon{
+    width: 300px;
+    height: 100px;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    display: none;
+}
+.mostrar-pokemon .mostrar-pokemon-content{
+    display: none;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.mostrar-pokemon .imgs-poke img{
+    border: solid 1px white;
+    border-radius: 10px;
+}
+.mostrar-pokemon .mostrar-pokemon-content #nome_pokemon{
+    margin-top: 20px;
+    color: var(--cor-amarelo-maroto);
+    font-family: 'PokemonFont';
+    font-size: 20pt;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--cor-azul-letra);
+    letter-spacing: 3.5px;
+    border-bottom: var(--cor-amarelo-maroto) 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mostrar-pokemon .mostrar-pokemon-content .base-info{
+    margin-top: 50px;
+    color: var(--cor-amarelo-maroto);
+    font-family: 'Press Start 2P', cursive;
+}
+.mostrar-pokemon .mostrar-pokemon-content .tabela{
+    color: var(--cor-amarelo-maroto);
+    margin: 5px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: justify; 
+}
+.mostrar-pokemon .mostrar-pokemon-content .tabela-top{
+    text-align: center;
+}
+.sobre{
+    display: none;
+    background-color: var(--cor-azuzinho-escuro);
+    padding: 30px;
+    margin-top: 100px;
+    width: 300px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+    color: white;
+    line-height: 1.5;
+}
+.sobre a{
+    color: var(--cor-amarelo-maroto);
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .procurar-pokemon{
+        width: 300px;
+        height: 300px;
+    }
+    .procurar-input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .procurar-input input{
+        margin-top: 20px;
+    }
+    .procurar-input button{
+        margin-top: 20px;
+        width: 150px;
+    }
+}
+@media (max-width: 330px){
+    .procurar-pokemon{
+        width: 200px;
+        height: 300px;
+    }
+    .procurar-pokemon h2{
+        font-size: 15pt;
+    }  
+    .procurar-input input{
+        width: 100px;
+    }
+}
