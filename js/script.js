@@ -50,7 +50,7 @@ function mostrarHome(){
     //retirando conteudo sobre
     document.querySelector('.sobre').style.display = "none";
     //Deixando conteudo da home visivel
-    mostrarPokemonArea.style.display = "flex";
+    mostrarPokemonArea.style.display = "block";
     document.querySelector('.procurar-pokemon').style.display = "flex";
     //mudando border bottom da barra de navegação
     btnHome.style.borderBottom = "2px solid var(--cor-azul-letra)";
